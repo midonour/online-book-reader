@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="bookreader_admin.css">
+    <script src="https://www.gstatic.com/firebasejs/10.13/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13/firebase-storage-compat.js"></script>     
+</head>
+<body>
+    <header>
+        <h2>Admin Dashboard</h2>
+        <button id="logout">Logout</button>
+    </header>
+
+    <section class="admin-section">
+        <h3>Add a New Book</h3>
+        <form id="addBookForm">
+            <input type="text" id="bookTitle" placeholder="Book Title" required>
+            <input type="text" id="bookAuthor" placeholder="Author" required>
+            <input type="url" id="bookUrl" placeholder="Book URL" required>
+            <button type="submit" id="submit">Add Book</button>
+        </form>
+    </section>
+
+    <section class="admin-section">
+        <h3>Manage Books</h3>
+        <ul id="bookList"></ul>
+    </section>
+
+    <script type="module" src="bookreader_admin.js"></script>
+</body>
+</html>

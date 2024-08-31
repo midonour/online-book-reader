@@ -1,0 +1,130 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #282c34;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+header {
+    background-color: #282c34;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 {
+    margin: 0;
+}
+
+header button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #61dafb;
+    color: #282c34;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    width: 100px;
+    height: 50px;
+}
+
+header button:hover {
+    background-color: #29aeae;
+}
+
+/* Section Styles */
+.admin-section {
+    margin: 2rem;
+    background-color: #282c34;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.admin-section h3 {
+    margin-bottom: 1rem;
+    color: #ffff;
+}
+
+.admin-section form {
+    display: flex;
+    flex-direction: column;
+    width: 94vw;
+}
+
+.admin-section form input, .admin-section form button {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #282c34;
+    color: white;
+    width: 94vw;
+    font-size: 25px;
+}
+
+.admin-section form button {
+    background-color: #61dafb;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.admin-section form button:hover {
+    background-color: #29aeae;
+}
+
+/* Book List Styles */
+#bookList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#bookList li {
+    padding: 0.75rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-bottom: 0.5rem;
+    display: flex;
+    width: 94vw;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 30px;
+    color: #000;
+}
+
+#bookList li button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute;
+    transition: background-color 0.3s;
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+
+}
+
+#bookList li button:hover {
+    background-color: #c0392b;
+}

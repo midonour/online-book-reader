@@ -1,0 +1,112 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #282c34;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Logout Button Styles */
+#logout {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #61dafb;
+    color: #282c34;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    width: 100px;
+    height: 50px;
+}
+
+#logout:hover {
+    background-color: #21a1f1;
+}
+
+/* Dashboard and Headings */
+h2 {
+    padding-top: 70px;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #61dafb;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    height: fit-content;
+}
+
+h3 {
+    margin-bottom: 30px;
+    font-size: 22px;
+    color: #61dafb;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    height: fit-content;
+}
+
+/* Book List Styles */
+#bookList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#bookList li {
+    padding: 0.75rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-bottom: 0.5rem;
+    display: flex;
+    width: 94vw;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 30px;
+    color: #000;
+}
+
+#bookList li button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute;
+    left: 87.5%;
+    transition: background-color 0.3s;
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+}
+
+#bookList li button:hover {
+    background-color: #c0392b;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 600px) {
+    #logout {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+
+    h2, h3 {
+        font-size: 18px;
+    }
+
+    #customerBookList li {
+        font-size: 16px;
+        padding: 10px;
+    }
+}

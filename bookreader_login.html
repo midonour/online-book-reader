@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online book reader</title>
+    <link rel="stylesheet" href="bookreader_login.css" />
+    <script src="https://www.gstatic.com/firebasejs/10.13/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13/firebase-storage-compat.js"></script>
+  </head>
+  <body>
+    <div class="login-container">
+      <h2>Login</h2>
+      <form action="#">
+          <div class="input-group">
+              <label for="email">Email</label>
+              <input type="text" id="email" name="username" required>
+          </div>
+          <div class="input-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" required>
+          </div>
+          <div class="input-group">
+            <label for="role">Role</label>
+            <select id="signupRole">
+                <option value="customer">Customer</option>
+                <option value="admin">Admin</option>
+            </select>
+        </div>
+          <button type="submit" class="btn" id="submit">Login</button>
+          <p class="signup-link">Don't have an account? <a href="bookreader_signup.html">Sign up</a></p>
+      </form>
+  </div>
+  <script type="module" src="bookreader_login.js"></script>
+</body>
+</html>
